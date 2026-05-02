@@ -1801,6 +1801,94 @@
         top: auto;
       }
     }
+
+    .z-bot-neural {
+      position: fixed;
+      bottom: 100px;
+      right: 24px;
+      width: 380px;
+      height: 600px;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(30px) saturate(180%);
+      -webkit-backdrop-filter: blur(30px) saturate(180%);
+      border: 1px solid rgba(0, 113, 227, 0.2);
+      border-radius: 30px;
+      box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.25);
+      display: flex;
+      flex-direction: column;
+      z-index: 10002;
+      transform: translateY(30px) scale(0.9);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+      overflow: hidden;
+    }
+
+    .z-bot-neural.is-active { transform: translateY(0) scale(1); opacity: 1; visibility: visible; }
+
+    .z-bot-header { padding: 20px 24px; background: #1d1d1f; color: #fff; display: flex; justify-content: space-between; align-items: center; }
+    .z-bot-identity { display: flex; align-items: center; gap: 12px; }
+    .z-bot-logo-area { position: relative; width: 40px; height: 40px; background: #fff; border-radius: 12px; display: grid; place-items: center; padding: 5px; }
+    .z-bot-logo-area img { width: 100%; height: auto; }
+    .online-status { position: absolute; top: -3px; right: -3px; width: 12px; height: 12px; background: #30d158; border: 2px solid #1d1d1f; border-radius: 50%; animation: neuralPulse 2s infinite; }
+
+    @keyframes neuralPulse { 0% { box-shadow: 0 0 0 0 rgba(48, 209, 88, 0.6); } 70% { box-shadow: 0 0 0 10px rgba(48, 209, 88, 0); } 100% { box-shadow: 0 0 0 0 rgba(48, 209, 88, 0); } }
+
+    .version-tag { font-size: 10px; opacity: 0.5; background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 4px; margin-left: 5px; vertical-align: middle; }
+    .bot-status-text { font-size: 10px; color: #30d158; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; margin: 0; }
+
+    .z-bot-chat-body {
+      flex: 1;
+      padding: 20px 24px;
+      overflow-y: auto !important; 
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      overscroll-behavior: contain;
+      scroll-behavior: smooth;
+    }
+
+    .z-bot-chat-body::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .z-bot-chat-body::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .z-bot-chat-body::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.344);
+      border-radius: 10px;
+    }
+
+    .z-bot-chat-body::-webkit-scrollbar-thumb:hover {
+      background: rgba(0, 35, 70, 0.2);
+    }
+
+    .system-timestamp { align-self: center; font-size: 10px; color: #86868b; text-transform: uppercase; letter-spacing: 0.1em; background: rgba(0,0,0,0.03); padding: 4px 12px; border-radius: 20px; }
+
+    .msg { padding: 14px 20px; border-radius: 22px; font-size: 14px; max-width: 85%; line-height: 1.5; font-family: inherit; }
+    .bot-msg { background: #ffffff; color: #1d1d1f; align-self: flex-start; border-bottom-left-radius: 5px; border: 1px solid rgba(0,0,0,0.04); box-shadow: 0 5px 15px rgba(0,0,0,0.03); }
+    .user-msg { background: #0071e3; color: #fff; align-self: flex-end; border-bottom-right-radius: 5px; box-shadow: 0 10px 25px -5px rgba(0, 113, 227, 0.4); }
+
+    .typing-container { padding: 0 24px 15px; display: flex; gap: 5px; }
+    .dot { width: 6px; height: 6px; background: #0071e3; border-radius: 50%; animation: dotAnim 1.4s infinite; opacity: 0.6; }
+    .dot:nth-child(2) { animation-delay: 0.2s; }
+    .dot:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes dotAnim { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.5); } }
+
+    .z-bot-footer { padding: 15px; background: #fff; border-top: 1px solid rgba(0,0,0,0.05); }
+    .chip-container { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 12px; scrollbar-width: none; }
+    .chip-container button { flex-shrink: 0; background: #f5f5f7; border: 1px solid #d2d2d7; padding: 8px 16px; border-radius: 12px; font-size: 12px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+    .chip-container button:hover { background: #1d1d1f; color: #fff; border-color: #1d1d1f; }
+
+    .z-bot-input-wrap { display: flex; gap: 10px; background: #f5f5f7; padding: 8px; border-radius: 18px; border: 1px solid #d2d2d7; }
+    .z-bot-input-wrap input { flex: 1; background: none; border: none; padding-left: 10px; outline: none; font-size: 14px; }
+    #z-bot-send { background: #0071e3; color: #fff; border: none; width: 42px; height: 42px; border-radius: 14px; cursor: pointer; display: grid; place-items: center; transition: transform 0.2s; }
+    #z-bot-send:active { transform: scale(0.9); }
+
+    .minimize-btn { background: none; border: none; color: #fff; font-size: 28px; cursor: pointer; line-height: 1; }
+    .hidden { display: none !important; }
     </style>
     <link rel="stylesheet" href="styles.min.css" />
   </head>
@@ -2242,7 +2330,7 @@
                 </div>
               </article>
 
-              <article class="product-card" data-product-card style="--glow-rgb: 255, 179, 64;"><div class="product-card-bg-icon"></div><span class="product-badge">05</span><h2 class="product-card-title">Z-Bot</h2><p>A lead-capture bot that asks follow-up questions after a client query, stores the answers, and converts them into qualified leads.</p><a class="product-link" href="#products" aria-label="Learn more about Z-Bot">Preview <span aria-hidden="true">&rarr;</span></a></article>
+              <article class="product-card" data-product-card style="--glow-rgb: 255, 179, 64;"><div class="product-card-bg-icon"></div><span class="product-badge">05</span><h2 class="product-card-title">Z-Bot</h2><p>A lead-capture bot that asks follow-up questions after a client query, stores the answers, and converts them into qualified leads.</p><a class="product-link" href="javascript:void(0)" id="z-bot-preview-trigger">Preview <span aria-hidden="true">→</span></a></article>
               
               <article class="product-card flip-card" id="phone-card" style="--glow-rgb: 255, 55, 95;">
                 <div class="product-card-inner">
@@ -2524,11 +2612,54 @@
         <a class="chat-dock-primary" href="https://wa.me/971542739439?text=Hello%20Zehanixx%2C%20I%20want%20to%20know%20more%20about%20your%20products." target="_blank" rel="noreferrer">
           WhatsApp API
         </a>
-        <a class="chat-dock-secondary" href="#products">
+        <button class="chat-dock-secondary" id="z-bot-trigger">
           View Z-Bot
-        </a>
+        </button>
       </div>
     </aside>
+
+    <!-- Z-Bot v2.4.0 Neural Agent -->
+<div class="z-bot-neural" id="z-bot-window">
+  <div class="z-bot-header">
+    <div class="z-bot-identity">
+      <div class="z-bot-logo-area">
+        <img src="assets/zehanixx-full-logo-36.png" alt="Zehanixx">
+        <span class="online-status"></span>
+      </div>
+      <div class="z-bot-branding">
+        <strong>Z-Bot <span class="version-tag">v2.4.0</span></strong>
+        <p class="bot-status-text">Autonomous Agent Active</p>
+      </div>
+    </div>
+    <button id="close-z-bot" class="minimize-btn">&minus;</button>
+  </div>
+
+  <div class="z-bot-chat-body" id="z-bot-msg-container">
+    <div class="system-timestamp">Secure Link Established • UAE Portal</div>
+    <div class="msg bot-msg">
+      System Ready. I am Z-Bot, your technical consultant. How can I assist your digital roadmap or Zehanixx product integration today?
+    </div>
+  </div>
+
+  <div id="typing-indicator" class="typing-container hidden">
+    <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+  </div>
+
+  <div class="z-bot-footer">
+        <div class="chip-container" id="quick-chips">
+          <button onclick="neuralQuery('What is Z CRM?')">Z CRM</button>
+          <button onclick="neuralQuery('Security Audit (VAPT)')">Security Audit</button>
+          <button onclick="neuralQuery('Mobile App Engineering')">Mobile Apps</button>
+          <button onclick="neuralQuery('Human Technical Lead')">Talk to Team</button>
+        </div>
+        <div class="z-bot-input-wrap">
+          <input type="text" id="z-bot-input" placeholder="Consult the Z-Stack...">
+          <button id="z-bot-send">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
 
     <footer class="site-footer">
       <div class="container footer-shell">
@@ -2602,6 +2733,224 @@
         handleFlip('ticket-card');
     });
     
+    document.addEventListener('DOMContentLoaded', () => {
+        const win = document.getElementById('z-bot-window');
+        const close = document.getElementById('close-z-bot');
+        const input = document.getElementById('z-bot-input');
+        const send = document.getElementById('z-bot-send');
+        const msgBox = document.getElementById('z-bot-msg-container');
+        const typing = document.getElementById('typing-indicator');
+        const zBotTriggers = [
+            document.getElementById('z-bot-trigger'),
+            document.getElementById('z-bot-preview-trigger')
+        ];
+
+        let lastIntent = "";
+
+        zBotTriggers.forEach(trigger => {
+            if (trigger) {
+                trigger.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    win.classList.add('is-active');
+                });
+            }
+        });
+
+        if (close) {
+            close.addEventListener('click', () => win.classList.remove('is-active'));
+        }
+
+        function addMsg(text, type) {
+            const d = document.createElement('div');
+            d.className = `msg ${type}-msg`;
+            d.innerHTML = text;
+            msgBox.appendChild(d);
+            msgBox.scrollTo({ top: msgBox.scrollHeight, behavior: 'smooth' });
+        }
+
+        function getNeuralResponse(query) {
+            const rawInput = query.toLowerCase().trim();
+            const words = rawInput.split(/\s+/);
+
+            const docKeywords = ['documentation', 'brochure', 'portfolio', 'case study', 'pdf', 'whitepaper', 'docs'];
+            if (docKeywords.some(key => rawInput.includes(key))) {
+                return "You can download our complete <strong>Company Profile and Product Documentation</strong> in the Contact section. I've highlighted the brochure card for you below. <br><br> <a href='#contact' onclick='document.getElementById(\"z-bot-window\").classList.remove(\"is-active\")' style='color:#0071e3; font-weight:700;'>Go to Documentation →</a>";
+            }
+
+            const getGreeting = () => {
+                const hour = new Date().getHours();
+                if (hour < 12) return "Good morning";
+                if (hour < 17) return "Good afternoon";
+                return "Good evening";
+            };
+
+            const positiveReplies = ['yes', 'yeah', 'sure', 'okay', 'ok', 'i would', 'walkthrough', 'demo', 'please', 'yep', 'go ahead'];
+            if (positiveReplies.includes(rawInput)) {
+                if (lastIntent === "CRM") {
+                    lastIntent = "";
+                    return "Excellent. I'll notify our technical lead to set up your <strong>Z CRM walkthrough</strong>. You can also jump into a secure chat right now. <br><br> <a href='https://wa.me/971542739439' target='_blank' style='display:inline-block; padding:10px 20px; background:#25d366; color:#fff; border-radius:12px; text-decoration:none; font-weight:700;'>Start Demo on WhatsApp</a>";
+                }
+                if (lastIntent === "SECURITY") {
+                    lastIntent = "";
+                    return "Smart move. System integrity is vital. I'll connect you with our cybersecurity team to discuss your <strong>VAPT audit requirements</strong>. <br><br> <a href='https://wa.me/971542739439' target='_blank' style='display:inline-block; padding:10px 20px; background:#25d366; color:#fff; border-radius:12px; text-decoration:none; font-weight:700;'>Secure Consultation</a>";
+                }
+                if (lastIntent === "APPS") {
+                    lastIntent = "";
+                    return "I'll have a solutions architect contact you to discuss your <strong>App roadmap and tech stack</strong>. Would you prefer to chat on WhatsApp now? <br><br> <a href='https://wa.me/971542739439' target='_blank' style='display:inline-block; padding:10px 20px; background:#25d366; color:#fff; border-radius:12px; text-decoration:none; font-weight:700;'>Chat with Architect</a>";
+                }
+                if (lastIntent === "GENERAL") {
+                    lastIntent = "";
+                    return "I'd love to help. We specialize in <strong>Product Engineering</strong>, <strong>AI Automation</strong>, and <strong>Cybersecurity</strong>. Which of these fits your roadmap right now?";
+                }
+            }
+
+            let searchInput = rawInput;
+            if (rawInput.startsWith("no ") || rawInput.startsWith("no, ")) {
+                searchInput = rawInput.replace(/^no,?\s+/, "");
+            } else if (rawInput === "no" || rawInput === "nope" || rawInput === "nothing") {
+                lastIntent = "";
+                return "No problem at all! Feel free to browse. If you have a technical question later, I'm right here.";
+            }
+
+            if (rawInput.includes("how are you")) {
+                return `I'm doing great, thank you! ${getGreeting()} to you. I'm here and ready to help you with any technical questions about our UAE digital services. What's on your mind?`;
+            }
+
+            if (rawInput === "hi" || rawInput === "hello" || rawInput === "hey" || rawInput === "marhaba") {
+                return `${getGreeting()}! I'm Z-Bot. I can help you explore our <strong>Product Suite</strong> or our <strong>Technical Services</strong>. Which would you like to hear about first?`;
+            }
+
+            const kb = [
+                {
+                    intent: "GENERAL_SERVICES",
+                    keywords: ['what service', 'services you provide', 'your services', 'what do you do', 'list services'],
+                    response: "We provide four core digital services: <strong>Web Presence (SEO & Design)</strong>, <strong>Product Engineering (Apps & Dashboards)</strong>, <strong>AI & Smart Systems (Automation)</strong>, and <strong>Cybersecurity (VAPT/Audits)</strong>. Would you like to dive into one of these?",
+                    context: "GENERAL"
+                },
+                {
+                    intent: "GENERAL_PRODUCTS",
+                    keywords: ['what product', 'products you have', 'list products', 'explain products', 'your tools', 'z-stack'],
+                    response: "Our <strong>Z-Stack</strong> includes: <strong>Z CRM</strong>, <strong>Lead Management</strong>, <strong>Ticket Management</strong>, <strong>WhatsApp API</strong>, <strong>Z Phone</strong>, <strong>Z Form</strong>, and <strong>Z-Bot</strong>. They all work in one unified ecosystem. Want to know more about a specific one?",
+                    context: "GENERAL"
+                },
+                {
+                    intent: "CRM",
+                    keywords: ['crm', 'pipeline', 'sales dashboard', 'manage deals', 'customer relation'],
+                    response: "Our <strong>Z CRM</strong> centralizes your sales pipeline and automates follow-ups to stop deals from slipping through the cracks. <strong>Would you like a quick walkthrough?</strong>",
+                    context: "CRM"
+                },
+                {
+                    intent: "SECURITY",
+                    keywords: ['security', 'vapt', 'audit', 'penetration', 'hack', 'secure', 'protection'],
+                    response: "Our cybersecurity team performs deep <strong>VAPT (Vulnerability Assessments)</strong> to secure your digital assets using OWASP standards. <strong>Shall we schedule a system audit?</strong>",
+                    context: "SECURITY"
+                },
+                {
+                    intent: "WHATSAPP",
+                    keywords: ['whatsapp api', 'official whatsapp', 'whatsapp bot', 'green tick'],
+                    response: "The <strong>WhatsApp API</strong> turns your chats into a 24/7 lead-capture engine, syncing directly with your CRM for instant response. Interested in a technical setup?",
+                    context: "GENERAL"
+                },
+                {
+                    intent: "APPS",
+                    keywords: ['app', 'mobile', 'website', 'build', 'ios', 'android', 'develop', 'flutter', 'react'],
+                    response: "We engineer high-performance <strong>Web and Mobile apps</strong> using React and Flutter with a focus on speed and scalability. <strong>Should I arrange a consult for your app project?</strong>",
+                    context: "APPS"
+                },
+                {
+                    intent: "LEADS",
+                    keywords: ['lead management', 'capture leads', 'enquiry', 'assign leads'],
+                    response: "Our <strong>Lead Management</strong> module ingests enquiries from Web, WhatsApp, and Social, then routes them to the right agent instantly. Want to see how it works?",
+                    context: "GENERAL"
+                },
+                {
+                    intent: "TICKETS",
+                    keywords: ['ticket', 'support system', 'helpdesk', 'sla'],
+                    response: "Our <strong>Ticket Management</strong> system handles support requests with SLA tracking and automated routing to ensure high client satisfaction. Is your support team looking for a tool?",
+                    context: "GENERAL"
+                },
+                {
+                    intent: "PRICE",
+                    keywords: ['price', 'cost', 'quote', 'how much', 'fees', 'budget'],
+                    response: "Pricing depends on your specific technical requirements and project scale. For an accurate quote, I can connect you with our UAE technical lead. Sound good?",
+                    context: "GENERAL"
+                },
+                {
+                    intent: "TIME",
+                    keywords: ['how long', 'timeline', 'duration', 'weeks', 'days', 'delivery'],
+                    response: "Standard websites take <strong>1-2 weeks</strong>. Custom Apps and CRM systems typically take <strong>4-8 weeks</strong> using our Agile delivery process. Do you have a specific deadline?",
+                    context: "GENERAL"
+                },
+                {
+                    intent: "LOCATION",
+                    keywords: ['where are you', 'location', 'dubai', 'uae', 'india', 'office'],
+                    response: "We are headquartered in the <strong>UAE</strong> for project management and strategy, with a major engineering hub in <strong>India</strong> for world-class development speed.",
+                    context: "GENERAL"
+                },
+                {
+                    intent: "HUMAN",
+                    keywords: ['human', 'talk to someone', 'whatsapp link', 'contact number', 'call', 'person', 'expert'],
+                    response: "I'll connect you with a <strong>Human Solutions Architect</strong> right now for a direct consultation. <br><br> <a href='https://wa.me/971542739439' target='_blank' style='display:inline-block; padding:10px 20px; background:#25d366; color:#fff; border-radius:12px; text-decoration:none; font-weight:700;'>Start WhatsApp Consultation</a>",
+                    context: ""
+                },
+                {
+                    intent: "THANKS",
+                    keywords: ['thanks', 'thank you', 'cool', 'nice', 'great', 'awesome'],
+                    response: "You're very welcome! I'm here to help you grow. Is there anything else in the Z-Stack you're curious about?",
+                    context: "GENERAL"
+                }
+            ];
+
+            let bestMatch = null;
+            let highestScore = 0;
+
+            kb.forEach(item => {
+                let score = 0;
+                item.keywords.forEach(key => {
+                    if (searchInput.includes(key)) {
+                        score += key.split(' ').length;
+                    }
+                });
+                if (score > highestScore) {
+                    highestScore = score;
+                    bestMatch = item;
+                }
+            });
+
+            if (highestScore > 0) {
+                lastIntent = bestMatch.context;
+                return bestMatch.response;
+            }
+
+            lastIntent = "GENERAL";
+            return "I'm not quite sure I caught that, but I'd love to help. Would you like to hear about our <strong>Product Suite (like CRM)</strong> or our <strong>Technical Services (like Apps/Security)</strong>?";
+        }
+
+        async function handleNeuralSend(text = null) {
+            const val = text || input.value.trim();
+            if (!val) return;
+
+            addMsg(val, 'user');
+            input.value = '';
+
+            typing.classList.remove('hidden');
+            msgBox.scrollTo({ top: msgBox.scrollHeight, behavior: 'smooth' });
+
+            await new Promise(r => setTimeout(r, 1200));
+
+            typing.classList.add('hidden');
+            const reply = getNeuralResponse(val);
+            addMsg(reply, 'bot');
+        }
+
+        window.neuralQuery = (t) => handleNeuralSend(t);
+
+        send.addEventListener('click', () => handleNeuralSend());
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') handleNeuralSend();
+        });
+    });
+
     </script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js" defer></script>
