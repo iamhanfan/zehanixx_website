@@ -1,0 +1,2487 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Zehanixx Solutions is a UAE digital agency building websites, apps, CRM, lead management, ticket management, WhatsApp API, AI bots, cloud phone systems, forms, and cybersecurity solutions."
+    />
+    <meta
+      name="keywords"
+      content="Zehanixx Solutions, Z CRM, lead management, ticket management, WhatsApp API, Z-Bot, Z Phone, Z Form, web development, mobile apps, AI automation, cybersecurity, UAE, GCC, India"
+    />
+    <meta property="og:title" content="Zehanixx Solutions" />
+    <meta
+      property="og:description"
+      content="We Build. We Secure. We Grow Your Business."
+    />
+    <meta property="og:type" content="website" />
+    <title>Zehanixx Solutions</title>
+    <link rel="preload" as="image" href="assets/zehanixx-full-logo-36.png" fetchpriority="high" />
+    <link rel="icon" href="assets/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
+    <style>
+
+      
+    .hero-section {
+      padding-top: 100px !important;
+      padding-bottom: 60px !important;
+      min-height: auto !important;
+    }
+
+    .hero-cta {
+      height: 40px !important;
+      padding: 0 18px !important;
+      font-size: 14px !important;
+    }
+
+    .hero-bubbles {
+      transform: translateX(-40px) !important;
+    }
+
+    .bubble-1 { 
+      top: 5% !important; 
+      left: calc(50% - 140px) !important;
+    }
+
+    .bubble-2 { 
+      top: 25% !important; 
+      right: 0 !important;
+    }
+
+    .bubble-3 { 
+      top: 42% !important; 
+      left: 0 !important; 
+    }
+
+    .bubble-4 { 
+      top: 58% !important; 
+      right: 5% !important;
+    }
+
+    .bubble-5 { 
+      top: 75% !important; 
+      left: calc(50% - 135px) !important;
+    }
+
+    .bubble::before, 
+    .bubble::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      background: radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1) 40%, rgba(0, 113, 227, 0.05) 80%, rgba(0, 113, 227, 0.2) 100%);
+      box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.9), 0 4px 8px rgba(0, 113, 227, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      z-index: 10;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .bubble-1::before { width: 35px; height: 35px; top: -45px; left: -30px; animation: bubblePop 8s 1s ease-out infinite; --drift-x: -30px; --drift-y: -100px; }
+    .bubble-1::after { width: 18px; height: 18px; bottom: -35px; right: -40px; animation: bubblePop 6s 3s ease-out infinite; --drift-x: 40px; --drift-y: -70px; }
+
+    .bubble-2::before { width: 28px; height: 28px; top: -50px; left: 10%; animation: bubblePop 9s 0s ease-out infinite; --drift-x: -20px; --drift-y: -120px; }
+    .bubble-2::after { width: 15px; height: 15px; bottom: -45px; right: 5%; animation: bubblePop 7s 2s ease-out infinite; --drift-x: 30px; --drift-y: -90px; }
+
+    .bubble-3::before { width: 45px; height: 45px; top: 30%; right: -60px; animation: bubblePop 10s 2s ease-out infinite; --drift-x: 50px; --drift-y: -140px; }
+    .bubble-3::after { width: 22px; height: 22px; top: -45px; left: -35px; animation: bubblePop 8s 4s ease-out infinite; --drift-x: -30px; --drift-y: -90px; }
+
+    .bubble-4::before { width: 25px; height: 25px; top: -30px; left: -50px; animation: bubblePop 7s 1.5s ease-out infinite; --drift-x: -40px; --drift-y: -80px; }
+    .bubble-4::after { width: 40px; height: 40px; bottom: -55px; right: 15%; animation: bubblePop 11s 0.5s ease-out infinite; --drift-x: 35px; --drift-y: -130px; }
+
+    .bubble-5::before { width: 18px; height: 18px; top: -45px; right: -40px; animation: bubblePop 6s 2.5s ease-out infinite; --drift-x: 30px; --drift-y: -70px; }
+    .bubble-5::after { width: 32px; height: 32px; bottom: -60px; left: 10%; animation: bubblePop 9s 1s ease-out infinite; --drift-x: -50px; --drift-y: -110px; }
+
+    @keyframes bubblePop {
+      0%   { transform: translate(0, 0) scale(0); opacity: 0; }
+      10%  { opacity: 0.9; }
+      85%  { transform: translate(var(--drift-x), var(--drift-y)) scale(1); opacity: 0.8; border-width: 1px; }
+      92%  { transform: translate(var(--drift-x), var(--drift-y)) scale(1.1); opacity: 0.8; border-width: 2px; }
+      96%  { transform: translate(var(--drift-x), var(--drift-y)) scale(1.5); opacity: 0; border-width: 0px; }
+      100% { transform: translate(var(--drift-x), var(--drift-y)) scale(1.5); opacity: 0; }
+    }
+
+    .hero-pills span {
+      animation: slowWave 8s ease-in-out infinite;
+    }
+
+    .hero-pills span:nth-child(1) { animation-delay: 0s; }
+    .hero-pills span:nth-child(2) { animation-delay: 0.4s; }
+    .hero-pills span:nth-child(3) { animation-delay: 0.8s; }
+    .hero-pills span:nth-child(4) { animation-delay: 1.2s; }
+    .hero-pills span:nth-child(5) { animation-delay: 1.6s; }
+    .hero-pills span:nth-child(6) { animation-delay: 2.0s; }
+    .hero-pills span:nth-child(7) { animation-delay: 2.4s; }
+
+    @keyframes slowWave {
+      0%, 15%, 100% {
+        background: rgba(0, 0, 0, 0.05);
+        color: var(--text);
+      }
+      7.5% {
+        background: rgba(0, 113, 227, 0.15);
+        color: var(--accent);
+      }
+    }
+
+    .hero-pills span:hover {
+      animation: none !important;
+      background: rgba(0, 113, 227, 0.15) !important;
+      color: var(--accent) !important;
+    }
+
+    @media (min-width: 1024px) {
+      .hero-visual {
+        transform: translateX(-70px) !important; 
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .hero-layout {
+        grid-template-columns: 1fr !important;
+        gap: 60px !important;
+      }
+      
+      .hero-visual { 
+        transform: none !important; 
+      }
+      
+      .hero-bubbles { 
+        transform: none !important; 
+        margin: 0 auto !important; 
+      }
+    }
+
+    @media (max-width: 833px) {
+      .headline-line {
+        font-size: clamp(40px, 8vw, 60px) !important;
+        white-space: normal !important; 
+        line-height: 1.1 !important;
+      }
+      
+      .hero-pills { 
+        max-width: 100% !important; 
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero-section {
+        padding-top: 90px !important;
+      }
+
+      .headline-line {
+        font-size: clamp(32px, 9vw, 42px) !important;
+      }
+      
+      .hero-lead {
+        font-size: 15px !important;
+        text-align: left !important;
+      }
+
+      .hero-bubbles {
+        width: 100% !important;
+        height: 520px !important;
+      }
+
+      .bubble {
+        width: 90% !important; 
+        max-width: 320px !important; 
+        padding: 14px 18px !important;
+        font-size: 14px !important;
+      }
+      
+      .bubble strong { font-size: 15px !important; }
+      .bubble small { font-size: 12px !important; }
+
+      .bubble-1 { top: 0% !important; left: 0 !important; right: 0 !important; margin: 0 auto !important; }
+      .bubble-2 { top: 22% !important; right: 0 !important; left: auto !important; }
+      .bubble-3 { top: 44% !important; left: 0 !important; right: auto !important; }
+      .bubble-4 { top: 66% !important; right: 0 !important; left: auto !important; }
+      .bubble-5 { top: 86% !important; left: 0 !important; right: 0 !important; margin: 0 auto !important; }
+    }
+
+    @media (max-width: 430px) {
+      .headline-line {
+        font-size: clamp(28px, 10vw, 34px) !important;
+      }
+      
+      .hero-bubbles { height: 480px !important; }
+      .bubble { padding: 12px 14px !important; }
+    }
+
+    .about-section { padding: 80px 0 60px 0 !important; }
+    .about-section { padding: 40px 0 60px 0 !important; }
+    .about-heading { margin: 0 auto 40px auto !important; }
+    .about-grid { margin-top: 0 !important; }
+    .values-strip { margin-top: 40px !important; }
+
+    .story-panel p {
+      max-width: 100% !important;
+    }
+
+    .about-panel, .value-card {
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      transition: box-shadow 0.3s ease, border-color 0.3s ease !important;
+    }
+
+    .about-panel:hover, .value-card:hover {
+      transform: none !important;
+      box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.1) !important;
+      border-color: rgba(0, 113, 227, 0.3) !important;
+    }
+
+    .about-panel * { position: relative; z-index: 2; }
+
+    .story-panel::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url('/assets/zehanixx_bg.PNG');
+      background-size: 75%;
+      background-position: right -70% center;
+      background-repeat: no-repeat;
+      opacity: 1; 
+      z-index: 0;
+      pointer-events: none;
+      animation: floatLogo 8s ease-in-out infinite;
+    }
+
+    @keyframes floatLogo {
+      0%   { transform: translateY(0px) scale(1); opacity: 0.04; }
+      50%  { transform: translateY(-12px) scale(1.3); opacity: 0.08; }
+      100% { transform: translateY(0px) scale(1); opacity: 0.04; }
+    }
+
+    .mission-card:nth-child(1)::after,
+    .mission-card:nth-child(2)::after {
+      content: "";
+      position: absolute;
+      right: -20px;
+      bottom: -20px;
+      width: 150px;
+      height: 150px;
+      opacity: 0.04;
+      z-index: 0;
+      background-size: contain;
+      background-repeat: no-repeat;
+      pointer-events: none;
+      animation: pulseEnlarge 4s ease-in-out infinite;
+    }
+
+    .mission-card:nth-child(1)::after {
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%230071e3" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>');
+    }
+
+    .mission-card:nth-child(2)::after {
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%230071e3" d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>');
+    }
+
+    @keyframes pulseEnlarge {
+      0%   { transform: scale(1); opacity: 0.04; }
+      50%  { transform: scale(1.35); opacity: 0.15; }
+      100% { transform: scale(1); opacity: 0.04; }
+    }
+
+    .about-heading h2, 
+    .services-heading h2, 
+    .process-heading h2, 
+    .contact-copy h2,
+    .presence-copy h2 {
+      background: linear-gradient(110deg, #1d1d1f 0%, #0e3354 30%, #1d1d1f 60%, #0e3354 100%) !important;
+      background-size: 300% auto !important;
+      -webkit-background-clip: text !important;
+      background-clip: text !important;
+      color: transparent !important;
+      animation: fluidShine 8s ease-in-out infinite !important;
+    }
+
+    @keyframes fluidShine {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .services-section {
+      padding: 30px 0 60px 0 !important;
+    }
+    .services-heading {
+      margin-bottom: 30px !important;
+    }
+
+    .services-heading h2 {
+      background: linear-gradient(110deg, #1d1d1f 0%, #134571 30%, #1d1d1f 60%, #134571 100%) !important;
+      background-size: 300% auto !important;
+      -webkit-background-clip: text !important;
+      background-clip: text !important;
+      color: transparent !important;
+      font-size: 50px !important;
+      animation: fluidShine 8s ease-in-out infinite !important;
+    }
+
+    @keyframes fluidShine {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .section-subtitle {
+      font-size: 15px !important;
+      max-width: 680px !important;
+      margin-top: 16px !important;
+    }
+
+    .service-card {
+      min-height: auto !important;
+    }
+
+    .services-section {
+      padding: 80px 0 60px 0 !important;
+    }
+
+    .services-heading {
+      margin-bottom: 40px !important;
+    }
+
+    .services-heading h2 {
+      font-size: clamp(34px, 5vw, 48px) !important;
+      line-height: 1.08 !important;
+      background: linear-gradient(110deg, #1d1d1f 0%, #0e3354 30%, #1d1d1f 60%, #0e3354 100%) !important;
+      background-size: 300% auto !important;
+      -webkit-background-clip: text !important;
+      background-clip: text !important;
+      color: transparent !important;
+      animation: fluidShine 8s ease-in-out infinite !important;
+    }
+
+    .section-subtitle {
+      font-size: 15px !important;
+      max-width: 680px !important;
+      margin-top: 16px !important;
+    }
+
+    .service-card {
+      min-height: auto !important;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-content {
+      min-height: auto !important;
+      justify-content: flex-start !important;
+    }
+
+    .service-card h3 {
+      transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1), color 0.5s ease !important;
+      transform-origin: left;
+    }
+
+    .service-card:hover h3 {
+      transform: scale(1.08) !important;
+      color: #0071e3 !important;
+    }
+
+    .service-lead {
+      font-size: 14px !important;
+    }
+
+    .service-list {
+      margin: 12px 0 0 0 !important;
+      padding-top: 0 !important;
+      font-size: 14px !important;
+    }
+
+    .service-list li {
+      margin-bottom: 6px !important;
+    }
+
+    .service-card::after {
+      content: "";
+      position: absolute;
+      left: -20px !important;
+      right: auto !important;
+      bottom: -20px;
+      width: 160px;
+      height: 160px;
+      opacity: 0.05 !important;
+      z-index: 0;
+      background-size: contain;
+      background-repeat: no-repeat;
+      pointer-events: none;
+      animation: none !important;
+    }
+
+    .service-card:nth-child(1)::after {
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%238e8e93" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>');
+    }
+
+    .service-card:nth-child(2)::after {
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%238e8e93" d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.5 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>');
+    }
+
+    .service-card:nth-child(3)::after {
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%238e8e93" d="M19 13c.55 0 1-.45 1-1V8c0-.55-.45-1-1-1h-1V5c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2v2H6c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h1v2c0 1.1.9 2 2 2h1v3h4v-3h1c1.1 0 2-.9 2-2v-2h1zM9 5h6v2H9V5zm8 10h-2v2H9v-2H7v-4h10v4z"/></svg>');
+    }
+
+    .service-card:nth-child(4)::after {
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%238e8e93" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>');
+    }
+
+    .service-number {
+      transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1), color 0.8s ease, opacity 0.8s ease !important;
+    }
+
+    .service-card:hover .service-number {
+      transform: scale(2.4) !important;
+      color: #0071e3 !important;
+      opacity: 0.15 !important;
+    }
+
+    .card-content {
+      min-height: auto !important; 
+      justify-content: flex-start !important;
+    }
+
+    .service-lead {
+      font-size: 14px !important;
+    }
+
+    .service-list {
+      margin: 12px 0 0 0 !important;
+      padding-top: 0 !important;
+      font-size: 14px !important;
+    }
+
+    .service-list li {
+      margin-bottom: 6px !important;
+    }
+
+    .preloader {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+  }
+
+  .preloader.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .preloader-logo {
+    width: 220px;
+    height: auto;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: logoFlyIn 2.4s cubic-bezier(0.85, 0, 0.15, 1) forwards;
+  }
+
+  @keyframes logoFlyIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    15% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    65% {
+      opacity: 1;
+      transform: scale(1.05) translate(0, 0);
+    }
+    100% {
+      transform: translate(calc(-50vw + 100px), calc(-50vh + 32px)) scale(0.18);
+      opacity: 0;
+    }
+  }
+
+  .brand img {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  body.is-ready .brand img {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .desktop-nav, .site-header__actions {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.8s ease 2.2s, transform 0.8s ease 2.2s;
+  }
+
+  body.is-ready .desktop-nav, 
+  body.is-ready .site-header__actions {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .products-section {
+    padding: 40px 0 60px 0 !important;
+  }
+
+  .products-heading {
+    margin-bottom: 40px !important;
+  }
+
+  .products-heading h2 {
+    font-size: clamp(34px, 5vw, 48px) !important;
+    line-height: 1.08 !important;
+    background: linear-gradient(110deg, #ffffff 0%, #0071e3 30%, #ffffff 60%, #0071e3 100%) !important;
+    background-size: 300% auto !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    color: transparent !important;
+    animation: fluidShine 8s ease-in-out infinite !important;
+  }
+
+  .products-heading .section-subtitle {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+    margin-top: 16px !important;
+  }
+
+  .product-card {
+    padding: 28px !important;
+    min-height: 440px !important;
+  }
+
+  .product-badge {
+    margin-bottom: 20px !important;
+  }
+
+  .product-card-title {
+    margin-bottom: 12px !important;
+    font-size: 26px !important;
+  }
+
+  .product-card p {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+  }
+
+  .product-link {
+    margin-top: auto !important;
+    padding-top: 20px !important;
+    font-size: 15px !important;
+  }
+
+  .product-card {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .product-card::before {
+    animation: glowBreathe 6s ease-in-out infinite;
+  }
+
+  @keyframes glowBreathe {
+    0%, 100% { opacity: 0.06; transform: scale(1); }
+    50% { opacity: 0.15; transform: scale(1.1); }
+  }
+
+  .product-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg, 
+      transparent, 
+      rgba(255, 255, 255, 0.08), 
+      transparent
+    );
+    transition: left 0.7s ease-in-out;
+    z-index: 1;
+  }
+
+  .product-card:hover::after {
+    left: 150%;
+  }
+
+  .product-card-bg-icon {
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    width: 180px;
+    height: 180px;
+    opacity: 0.03;
+    z-index: 0;
+    pointer-events: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0 0 10px rgba(var(--glow-rgb), 0.5));
+    animation: productIconFloat 10s ease-in-out infinite;
+  }
+
+  @keyframes productIconFloat {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    33% { transform: translate(-10px, -15px) rotate(5deg); }
+    66% { transform: translate(10px, -5px) rotate(-5deg); }
+  }
+
+  .product-card:nth-child(1) .product-card-bg-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23ffffff" d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>');
+  }
+
+  .product-card:nth-child(2) .product-card-bg-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23ffffff" d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"/></svg>');
+  }
+
+  .product-card:nth-child(3) .product-card-bg-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23ffffff" d="M22 10V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v4c1.1 0 2 .9 2 2s-.9 2-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4c-1.1 0-2-.9-2-2s.9-2 2-2zM11 15H9v-2h2v2zm0-4H9V9h2v2zm4 4h-2v-2h2v2zm0-4h-2V9h2v2z"/></svg>');
+  }
+
+  .product-card:nth-child(4) .product-card-bg-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23ffffff" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.91-9.91-9.91z"/></svg>');
+  }
+
+  .product-card:nth-child(5) .product-card-bg-icon {
+    background-image: url('assets/1538298822.svg') !important;
+    opacity: 0.03 !important; 
+    width: 250px !important;
+    height: 250px !important;
+    bottom: -30px !important;
+    right: -30px !important;
+    filter: invert(1) !important;
+  }
+
+  .product-card:nth-child(6) .product-card-bg-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23ffffff" d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.045 15.045 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1.01c-.36-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.72 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>');
+  }
+
+  .product-card:nth-child(7) .product-card-bg-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23ffffff" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2zm0-4H7V7h10v2zm-4 8H7v-2h6v2z"/></svg>');
+  }
+
+  .product-badge {
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .product-card:hover .product-badge {
+    transform: scale(1.2) rotate(-5deg);
+  }
+
+  .product-visual-showcase {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 60px auto;
+    padding: 0 20px;
+  }
+
+  .showcase-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+  }
+
+  .showcase-item {
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+  }
+
+  .side-item {
+    width: 100px;
+    opacity: 0.85;
+    animation: floatSide 6s ease-in-out infinite alternate;
+  }
+
+  .main-item {
+    width: 180px;
+    z-index: 2;
+    animation: floatMain 5s ease-in-out infinite alternate;
+  }
+
+  @media (max-width: 768px) {
+    .showcase-container {
+      gap: 10px;
+    }
+    .side-item { width: 60px; }
+    .main-item { width: 110px; }
+    .product-visual-showcase { margin-bottom: 40px; }
+  }
+
+  @media (max-width: 480px) {
+      .showcase-item { width: 50px !important; }
+      .main-item { width: 85px !important; }
+  }
+
+    .flip-card {
+      perspective: 2000px;
+      background: transparent !important;
+      border: none !important;
+      padding: 0 !important;
+    }
+
+    .product-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+      transform-style: preserve-3d;
+    }
+
+    .flip-card.is-flipped .product-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-face {
+      position: absolute;
+      inset: 0;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      padding: 28px !important;
+      border-radius: 28px !important;
+      background: rgba(255, 255, 255, 0.04) !important;
+      backdrop-filter: blur(20px) !important;
+      border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    }
+
+    .product-card-back {
+      transform: rotateY(180deg);
+    }
+
+    .back-image-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      height: calc(100% - 40px);
+    }
+
+    .lead-img {
+      width: 100%;
+      height: 48%; 
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .product-card-front .product-badge { position: relative; margin-bottom: 20px; display: grid; }
+    .product-card-front .product-link { margin-top: auto; }
+
+    .form-slideshow {
+      position: relative;
+      width: 100%;
+      height: calc(100% - 40px);
+    }
+
+    .slide-view-1, 
+    .slide-view-2 {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .slide-view-1 {
+      gap: 12px;
+      animation: fadeOutIn 8s infinite ease-in-out;
+    }
+
+    .slide-view-2 {
+      justify-content: center;
+      align-items: center;
+      animation: fadeInOut 8s infinite ease-in-out;
+    }
+
+    .form-img-half {
+      width: 100%;
+      height: 48%;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .form-img-contained {
+      max-width: 100%;
+      max-height: 80%;
+      object-fit: contain;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    }
+
+    @keyframes fadeOutIn {
+      0%, 45% { opacity: 1; pointer-events: auto; }
+      55%, 95% { opacity: 0; pointer-events: none; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes fadeInOut {
+      0%, 45% { opacity: 0; pointer-events: none; }
+      55%, 95% { opacity: 1; pointer-events: auto; }
+      100% { opacity: 0; }
+    }
+
+    .phone-slideshow {
+      position: relative;
+      width: 100%;
+      height: calc(100% - 40px);
+    }
+
+    .phone-slide-1, 
+    .phone-slide-2 {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .phone-slide-1 {
+      gap: 12px;
+      animation: fadeOutIn 8s infinite ease-in-out;
+    }
+
+    .phone-slide-2 {
+      justify-content: center;
+      align-items: center;
+      animation: fadeInOut 8s infinite ease-in-out;
+    }
+
+    .phone-img-half {
+      width: 100%;
+      height: 48%;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .phone-img-contained {
+      max-width: 100%;
+      max-height: 85%;
+      object-fit: contain;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    }
+
+    .whatsapp-image-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      height: calc(100% - 40px);
+    }
+
+    .whatsapp-img {
+      width: 100%;
+      height: 48%;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .crm-slideshow {
+      position: relative;
+      width: 100%;
+      height: calc(100% - 40px);
+    }
+
+    .crm-slide-1, 
+    .crm-slide-2 {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .crm-slide-1 {
+      animation: fadeOutIn 10s infinite ease-in-out;
+    }
+
+    .crm-slide-2 {
+      animation: fadeInOut 10s infinite ease-in-out;
+    }
+
+    .crm-img-half {
+      width: 100%;
+      height: 48%;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .ticket-image-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      height: calc(100% - 40px);
+    }
+
+    .ticket-img {
+      width: 100%;
+      height: 48%;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .process-section {
+      padding: 40px 0 80px 0 !important;
+      background: #f5f5f7;
+    }
+
+    .process-heading {
+      margin-bottom: 24px !important;
+    }
+
+    .process-heading h2 {
+      font-size: clamp(24px, 4vw, 38px) !important;
+      line-height: 1.08 !important;
+      background: linear-gradient(110deg, #1d1d1f 0%, #0e3354 30%, #1d1d1f 60%, #0e3354 100%) !important;
+      background-size: 300% auto !important;
+      -webkit-background-clip: text !important;
+      background-clip: text !important;
+      color: transparent !important;
+      animation: fluidShine 8s ease-in-out infinite !important;
+    }
+
+    .process-heading p:not(.eyebrow) {
+      font-size: 15px !important;
+      margin-top: 12px !important;
+      color: #6e6e73;
+    }
+
+    .process-rail {
+      position: relative;
+      width: 42px;
+      height: calc(100% - 50px) !important;
+      margin: 25px auto 0 auto !important;
+    }
+
+    .process-rail-line {
+      position: absolute;
+      top: 0; bottom: 0; left: 50%;
+      width: 1px;
+      background: rgba(0, 0, 0, 0.08);
+      transform: translateX(-50%);
+    }
+
+    .process-rail-fill {
+      position: absolute;
+      top: 0; left: 50%;
+      width: 2px;
+      background: #0071e3 !important;
+      transform: translateX(-50%);
+      transform-origin: top center;
+      transition: transform 0.2s ease-out;
+    }
+
+    .process-node {
+      position: absolute;
+      left: 50%;
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 50%;
+      color: #86868b;
+      font-size: 12px;
+      font-weight: 600;
+      transform: translate(-50%, -50%);
+      transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      z-index: 2;
+    }
+
+    .process-node.is-active {
+      background: #0071e3 !important;
+      color: #ffffff !important;
+      border-color: #0071e3 !important;
+      transform: translate(-50%, -50%) scale(1.15) !important;
+      box-shadow: 0 0 0 0 rgba(0, 113, 227, 0.4);
+      animation: nodeRipple 2s infinite;
+    }
+
+    @keyframes nodeRipple {
+      0% { box-shadow: 0 0 0 0 rgba(0, 113, 227, 0.4); }
+      70% { box-shadow: 0 0 0 12px rgba(0, 113, 227, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(0, 113, 227, 0); }
+    }
+
+    .process-node.is-complete {
+      background: #1d1d1f !important;
+      color: #ffffff !important;
+      border-color: #1d1d1f !important;
+    }
+
+    .process-step-list {
+      display: grid;
+      gap: 12px !important;
+    }
+
+    .process-step {
+      position: relative;
+      overflow: hidden;
+      padding: 16px 24px !important;
+      min-height: 140px !important;
+      border-radius: 20px !important;
+      background: rgba(255, 255, 255, 0.5) !important;
+      border: 1px solid rgba(0, 0, 0, 0.05) !important;
+      transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      z-index: 1;
+    }
+
+    .process-step::before {
+      content: "";
+      position: absolute;
+      top: 0; left: -100%;
+      width: 50%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+      transform: skewX(-25deg);
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .process-step.is-active::before {
+      animation: shimmerSweep 1.5s ease-in-out forwards;
+    }
+
+    @keyframes shimmerSweep {
+      0% { left: -100%; }
+      100% { left: 200%; }
+    }
+
+    .process-step-kicker {
+      font-size: 10.5px !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.08em !important;
+      margin-bottom: 4px !important;
+      color: #86868b;
+      transition: color 0.4s ease, transform 0.6s ease !important;
+      transform-origin: left;
+    }
+
+    .process-step h3 {
+      font-size: 19px !important;
+      margin-bottom: 6px !important;
+      font-weight: 600 !important;
+      transition: color 0.4s ease, transform 0.6s ease !important;
+      transform-origin: left;
+    }
+
+    .process-step p:not(.process-step-kicker) {
+      font-size: 13.5px !important;
+      line-height: 1.45 !important;
+      color: #6e6e73;
+      max-width: 480px !important;
+    }
+
+    .process-step.is-active {
+      background: #ffffff !important;
+      transform: translateX(10px) !important;
+      border-color: rgba(0, 113, 227, 0.2) !important;
+      box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.08) !important;
+      animation: activeBorderPulse 3s infinite ease-in-out;
+    }
+
+    @keyframes activeBorderPulse {
+      0%, 100% { border-color: rgba(0, 113, 227, 0.2); }
+      50% { border-color: rgba(0, 113, 227, 0.5); }
+    }
+
+    .process-step.is-active h3,
+    .process-step.is-active .process-step-kicker {
+      color: #0071e3 !important;
+      transform: scale(1.04);
+    }
+
+    .step-bg-icon {
+      position: absolute;
+      right: 12px;
+      bottom: 12px;
+      width: 115px;
+      height: 115px;
+      opacity: 0.02;
+      filter: grayscale(1);
+      background-size: contain;
+      background-repeat: no-repeat;
+      transition: all 0.9s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      transform: scale(0.85);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .process-step.is-active .step-bg-icon {
+      opacity: 0.1 !important;
+      filter: grayscale(0) !important;
+      transform: scale(1.18) rotate(-4deg) !important;
+    }
+
+    .step-bg-icon {
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+      width: 150px;
+      height: 150px;
+      opacity: 0.015;
+      filter: grayscale(1) blur(1px);
+      transition: all 1s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      transform: scale(0.8) rotate(5deg);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .process-step.is-active .step-bg-icon {
+      opacity: 0.18 !important;
+      filter: grayscale(0) blur(0px) drop-shadow(0 0 15px rgba(0, 113, 227, 0.4)) !important;
+      transform: scale(1.25) rotate(-5deg) !important;
+    }
+
+    .icon-discovery {
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%230071e3" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5.5-8c0-3.03 2.47-5.5 5.5-5.5s5.5 2.47 5.5 5.5-2.47 5.5-5.5 5.5-5.5-2.47-5.5-5.5z"/><circle fill="%230071e3" cx="12" cy="12" r="2"/></svg>');
+    }
+
+    .icon-roadmap {
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%230071e3" d="M21 11.5v-1h-2V9c0-1.1-.9-2-2-2h-1.5V5h-1v2h-5V5h-1v2H7c-1.1 0-2 .9-2 2v1.5H3v1h2V13c0 1.1.9 2 2 2h1.5v2h1v-2h5v2h1v-2H17c1.1 0 2-.9 2-2v-1.5h2zM17 13H7V9h10v4z"/><rect fill="%230071e3" x="9" y="10" width="2" height="2"/><rect fill="%230071e3" x="13" y="10" width="2" height="2"/></svg>');
+    }
+
+    .icon-design {
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%230071e3" d="M19 11c-1.1 0-2 .9-2 2v2c0 2.21-1.79 4-4 4s-4-1.79-4-4v-6c0-1.1-.9-2-2-2s-2 .9-2 2v8c0 1.1.9 2 2 2h1v-2h-1v-8h2v6c0 3.31 2.69 6 6 6s6-2.69 6-6v-2c0-1.1-.9-2-2-2z"/><path fill="%230071e3" d="M21.71 5.29l-3-3a1 1 0 00-1.42 0l-12 12a1 1 0 00-.21.33L4.04 18.2a1 1 0 001.21 1.21l3.58-1.04a1 1 0 00.33-.21l12-12a1 1 0 000-1.42l.55.55zm-14 11.3l-1.56.45.45-1.56L15 7.12 16.88 9l-9.17 7.59z"/></svg>');
+    }
+
+    .icon-build {
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%230071e3" d="M22 8l-6-6H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8zm-7-4l4 4h-4V4zM4 20V4h9v5h5v11H4z"/><path fill="%230071e3" d="M6 12h12v2H6zm0 4h8v2H6zm0-8h5v2H6z"/></svg>');
+    }
+
+    .icon-launch {
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%230071e3" d="M12 2.5s-5 4.5-5 8.5c0 2.76 2.24 5 5 5s5-2.24 5-5c0-4-5-8.5-5-8.5zM12 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm1 6.16c4.01-.4 7.22-3.4 7.89-7.36l1.09.2c-.8 4.71-4.63 8.32-9.43 8.8l-.2-1.09c.22-.01.44-.06.65-.15z"/></svg>');
+    }
+
+    @media (max-width: 1024px) {
+      .process-step.is-active { transform: none !important; }
+    }
+
+    .process-rail-panel {
+      top: 120px !important;
+    }
+
+    .process-rail {
+      margin-top: -80px !important;
+    }
+
+    .process-step small {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      position: relative;
+      transition: color 0.4s ease !important;
+    }
+
+    .process-step small::before {
+      content: "";
+      width: 13px;
+      height: 13px;
+      border: 1.5px solid currentColor;
+      border-radius: 50%;
+      flex-shrink: 0;
+      display: inline-block;
+      opacity: 0.5;
+      transition: opacity 0.4s ease !important;
+    }
+
+    .process-step small::after {
+      content: "";
+      position: absolute;
+      left: 6px;
+      top: 50%;
+      width: 1.2px;
+      height: 5px;
+      background: currentColor;
+      transform-origin: bottom center;
+      transform: translateY(-100%) rotate(0deg);
+      opacity: 0;
+      transition: opacity 0.4s ease !important;
+    }
+
+    .process-step.is-active small {
+      color: #0071e3 !important;
+    }
+
+    .process-step.is-active small::before {
+      opacity: 1;
+    }
+
+    .process-step.is-active small::after {
+      opacity: 1;
+      animation: clockHandTick 2.5s linear infinite;
+    }
+
+    @keyframes clockHandTick {
+      from {
+        transform: translateY(-100%) rotate(0deg);
+      }
+      to {
+        transform: translateY(-100%) rotate(360deg);
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .process-timeline {
+        display: grid !important;
+        grid-template-columns: 80px 1fr !important; 
+        gap: 0 !important;
+      }
+
+      .process-rail-panel {
+        display: block !important;
+        position: relative !important;
+        top: 0 !important;
+      }
+
+      .process-step-list {
+        padding-left: 30px !important;
+      }
+
+      .process-step.is-active {
+        transform: translateX(5px) !important;
+      }
+
+      .step-bg-icon {
+        width: 100px !important;
+        height: 100px !important;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .process-timeline {
+        grid-template-columns: 60px 1fr !important;
+      }
+
+      .process-step-list {
+        padding-left: 15px !important;
+      }
+
+      .process-node {
+        width: 36px !important;
+        height: 36px !important;
+        font-size: 11px !important;
+      }
+
+      .process-rail {
+        margin-top: 15px !important;
+      }
+
+      .process-step h3 {
+        font-size: 17px !important;
+      }
+
+      .process-step p:not(.process-step-kicker) {
+        font-size: 13px !important;
+      }
+
+      .step-bg-icon {
+        width: 80px !important;
+        height: 80px !important;
+        right: 5px !important;
+        bottom: 5px !important;
+      }
+      
+      .process-mobile-node {
+        display: none !important;
+      }
+    }
+
+    @keyframes activePhasePop {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.03); }
+      100% { transform: scale(1); }
+    }
+
+    .process-step.is-active {
+      animation: activePhasePop 4s ease-in-out infinite;
+    }
+
+    .contact-section {
+      padding: 40px 0 80px 0 !important;
+      background: #f5f5f7;
+    }
+
+    .contact-copy h2 {
+      font-size: clamp(24px, 5vw, 44px) !important;
+      line-height: 1.1 !important;
+      margin-bottom: 15px !important;
+      background: linear-gradient(110deg, #1d1d1f 0%, #0e3354 30%, #1d1d1f 60%, #0e3354 100%) !important;
+      background-size: 300% auto !important;
+      -webkit-background-clip: text !important;
+      background-clip: text !important;
+      color: transparent !important;
+      animation: fluidShine 8s ease-in-out infinite !important;
+    }
+
+    .contact-copy > p {
+      font-size: 15px !important;
+      color: #6e6e73;
+      line-height: 1.5 !important;
+    }
+
+    .contact-cards {
+      gap: 10px !important;
+      margin-top: 25px !important;
+    }
+
+    .contact-card {
+      padding: 16px 20px !important;
+      border-radius: 16px !important;
+      background: rgba(255, 255, 255, 0.7) !important;
+      border: 1px solid rgba(0, 0, 0, 0.05) !important;
+      transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    }
+
+    .contact-card:hover {
+      background: #ffffff !important;
+      transform: translateX(10px) !important;
+      border-color: rgba(0, 113, 227, 0.3) !important;
+      box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.05) !important;
+    }
+
+    .contact-card strong {
+      font-size: 15px !important;
+      transition: color 0.3s ease;
+    }
+
+    .contact-card:hover strong {
+      color: #0071e3 !important;
+    }
+
+    .contact-card-main span span {
+      font-size: 13px !important;
+    }
+
+    .contact-card-icon {
+      transition: transform 0.5s ease, color 0.3s ease !important;
+    }
+
+    .contact-card:hover .contact-card-icon {
+      color: #0071e3 !important;
+      transform: scale(1.1);
+    }
+
+    .contact-card-chevron {
+      transition: transform 0.5s ease !important;
+    }
+
+    .contact-card:hover .contact-card-chevron {
+      transform: translateX(5px) scale(1.1);
+      color: #0071e3 !important;
+    }
+
+    .contact-form {
+      padding: 30px !important;
+      border-radius: 24px !important;
+    }
+
+    .form-head h3 {
+      font-size: 20px !important;
+    }
+
+    .form-head p {
+      font-size: 13px !important;
+    }
+
+    .form-field label {
+      font-size: 12px !important;
+      margin-bottom: 4px !important;
+    }
+
+    .contact-form input, 
+    .contact-form select, 
+    .contact-form textarea {
+      font-size: 14px !important;
+      padding: 10px 14px !important;
+    }
+
+    .form-primary {
+      height: 42px !important;
+      font-size: 14px !important;
+      padding: 0 24px !important;
+    }
+
+    .contact-call-link {
+      font-size: 14px !important;
+    }
+
+    @media (max-width: 1024px) {
+      .contact-card:hover {
+        transform: none !important;
+      }
+    }
+
+    .form-actions {
+      margin-top: 20px !important;
+      display: block !important;
+    }
+
+    .submit-pill {
+      height: 40px !important;
+      padding: 0 24px !important;
+      font-size: 14px !important;
+      border-radius: 999px !important;
+      cursor: pointer;
+      border: none !important;
+      position: relative;
+      overflow: hidden;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease-in-out !important;
+    }
+
+    .submit-pill .btn-text {
+      opacity: 1;
+      transform: translateY(0);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .submit-pill .btn-icon {
+      position: absolute;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .submit-pill:hover {
+      background-color: #ffffff !important;
+      color: #0071e3 !important;
+      border: 1px solid #0071e3 !important;
+    }
+
+    .submit-pill:hover .btn-text {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+
+    .submit-pill:hover .btn-icon {
+      opacity: 1;
+      transform: translateY(0);
+      color: #0071e3 !important;
+    }
+
+    .submit-pill {
+      will-change: transform, background-color;
+    }
+
+    .contact-form {
+      background: #ffffff !important;
+      border: 1px solid rgba(0, 0, 0, 0.05) !important;
+      box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.08) !important;
+      padding: 40px !important;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.4s ease, border-color 0.4s ease !important;
+    }
+
+    .contact-form::before {
+      content: "";
+      position: absolute;
+      top: -50%; right: -50%;
+      width: 100%; height: 100%;
+      background: radial-gradient(circle, rgba(0, 113, 227, 0.03) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .form-head h3 {
+      font-size: 22px !important;
+      letter-spacing: -0.01em;
+      background: linear-gradient(90deg, #1d1d1f, #0071e3);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 8px !important;
+    }
+
+    .form-field {
+      position: relative;
+      margin-bottom: 20px !important;
+    }
+
+    .form-field label {
+      font-size: 11px !important;
+      font-weight: 700 !important;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #86868b;
+      margin-bottom: 6px !important;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .contact-form input, 
+    .contact-form select, 
+    .contact-form textarea {
+      background: #fbfbfd !important;
+      border: 1px solid #d2d2d7 !important;
+      border-radius: 12px !important;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    }
+
+    .contact-form input:focus, 
+    .contact-form select:focus, 
+    .contact-form textarea:focus {
+      background: #ffffff !important;
+      border-color: #0071e3 !important;
+      box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.1) !important;
+      transform: translateY(-2px);
+    }
+
+    .form-field:focus-within label {
+      color: #0071e3 !important;
+    }
+
+    .select-wrap {
+      position: relative;
+    }
+
+    .select-chevron {
+      transition: transform 0.3s ease !important;
+    }
+
+    .form-field:focus-within .select-chevron {
+      transform: translateY(-50%) rotate(180deg);
+      color: #0071e3 !important;
+    }
+
+    .contact-form textarea {
+      min-height: 120px !important;
+    }
+
+    #form-status {
+      font-weight: 600;
+      font-size: 13px;
+      display: block;
+      margin-top: 15px;
+      animation: statusFade 0.5s ease-in;
+    }
+
+    @keyframes statusFade {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .contact-form:hover {
+      border-color: rgba(0, 113, 227, 0.15) !important;
+      transform: translateY(-5px);
+    }
+
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 4px;
+    }
+
+    .footer-favicon {
+      width: 22px;
+      height: auto;
+      filter: brightness(0) invert(1);
+      opacity: 0.9;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .footer-brand:hover .footer-favicon {
+      transform: scale(1.1) rotate(-5deg);
+      opacity: 1;
+    }
+
+    .site-footer strong {
+      margin: 0 !important;
+      line-height: 1;
+    }
+
+    .contact-form {
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .contact-form > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    .contact-form::after {
+      content: "";
+      position: absolute;
+      top: 1%;
+      left: -50px; 
+      width: 850px;
+      height: 850px;
+      background-image: url('assets/zehanixx_bg.PNG');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.05; 
+      z-index: 0;
+      pointer-events: none; 
+    }
+
+    @keyframes watermarkFloat {
+      0%, 100% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+      50% {
+        transform: translate(-15px, 20px) rotate(5deg);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .contact-form::after {
+        width: 200px;
+        height: 200px;
+        left: -20px;
+        bottom: -20px;
+        top: auto;
+      }
+    }
+    </style>
+    <link rel="stylesheet" href="styles.min.css" />
+  </head>
+  <body>
+    <div class="preloader" id="preloader">
+    <div class="preloader-content">
+        <img src="assets/zehanixx-full-logo-36.png" alt="Zehanixx" class="preloader-logo">
+    </div>
+</div>
+    <div class="scroll-progress" aria-hidden="true">
+      <div class="scroll-progress__bar"></div>
+    </div>
+
+    <div class="cursor-dot" aria-hidden="true"></div>
+
+    <header class="site-header" data-header>
+      <div class="site-header__inner">
+        <a class="brand" href="#hero" aria-label="Zehanixx Solutions home">
+          <img
+            src="assets/zehanixx-full-logo-36.png"
+            alt="Zehanixx Solutions"
+            width="36"
+            height="36"
+            decoding="async"
+            fetchpriority="high"
+          />
+        </a>
+
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#products">Products</a>
+          <a href="#process">Process</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="site-header__actions">
+         
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+            data-menu-toggle
+          >
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div
+      class="mobile-menu"
+      id="mobile-menu"
+      aria-hidden="true"
+      data-mobile-menu
+      inert
+    >
+      <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#products">Products</a>
+        <a href="#process">Process</a>
+        <a href="#presence">Presence</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <main>
+      <section class="section section--light hero-section" id="hero">
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow hero-eyebrow">
+              UAE-rooted. Product-led. Built for growth.
+            </p>
+
+            <h1
+              class="hero-title"
+              aria-label="We Build Products. We Capture Leads. We Power Growth."
+            >
+              <span class="headline-line ">We Build Products.</span>
+              <span class="headline-line">We Capture Leads.</span>
+              <span class="headline-line headline-underlined">
+                We Power Growth.
+                <span class="headline-underline" aria-hidden="true"></span>
+              </span>
+            </h1>
+
+            <p class="hero-lead">
+              Premium web applications, scalable mobile solutions, and enterprise-grade business systems powered by Z CRM, Lead Management, Ticket Management, WhatsApp API, Z-Bot, Z Phone, and Z Form, built on an API-first and scalable architecture. These solutions enable real-time data processing, automated workflows, seamless integrations, and end-to-end customer lifecycle management, ensuring high performance, reliability, and data-driven growth.
+            </p>
+
+            <div class="hero-actions" aria-label="Hero actions">
+              <a
+                class="hero-cta hero-cta--primary"
+                href="https://wa.me/971542739439"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="btn-text">Talk on WhatsApp</span>
+                <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.82 9.82 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+                </svg>
+              </a>
+              
+              <a class="hero-cta hero-cta--secondary" href="#products">
+                Explore Products <span>→</span>
+              </a>
+            </div>
+
+            <div class="hero-pills" aria-label="Zehanixx product suite">
+              <span>Z CRM</span>
+              <span>Lead Management</span>
+              <span>Ticket Management</span>
+              <span>WhatsApp API</span>
+              <span>Z-Bot</span>
+              <span>Z Phone</span>
+              <span>Z Form</span>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Zehanixx product stack">
+            <div class="hero-stage">
+              <div class="hero-orb" aria-hidden="true"></div>
+
+              <div class="hero-card-parallax">
+                <div class="hero-bubbles">
+                  <div class="bubble bubble-1">
+                    <strong>Z Product Stack</strong>
+                    <small>Capture, convert, support, and scale</small>
+                  </div>
+                  <div class="bubble bubble-2">
+                    Z CRM, lead pipelines, and ticket workflows in one ecosystem
+                  </div>
+                  <div class="bubble bubble-3">
+                    WhatsApp API and Z-Bot capture enquiries and turn them into leads
+                  </div>
+                  <div class="bubble bubble-4">
+                    Z Phone and Z Form for calls, forms, and structured intake
+                  </div>
+                  <div class="bubble bubble-5">
+                    Custom websites, apps, and security around the full stack
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-coverage" aria-label="Markets served">
+              <span>UAE · GCC · INDIA · WORLDWIDE</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="container">
+          <div class="about-heading" data-reveal>
+            <p class="eyebrow">About Zehanixx</p>
+            <h2>Your long-term digital growth partner.</h2>
+            <p style="font-size: 14px !important;">
+              Headquartered in the United Arab Emirates, Zehanixx helps
+              ambitious businesses across the UAE, GCC, India, and beyond build
+              stronger digital systems.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <article
+              class="about-panel story-panel"
+              data-reveal
+              data-delay="120"
+              data-about-parallax
+            >
+              <p class="about-text" style="font-size: 16px !important;">
+                We combine advanced technology, thoughtful UI/UX design, intelligent automation, and robust security practices to build custom digital systems that deliver a premium user experience, ensure high performance and reliability, and streamline complex business operations. Our solutions are designed with scalable architectures, seamless integrations, and data-driven workflows, enabling businesses to optimize processes, enhance user engagement, and drive sustainable, measurable growth.
+              </p>
+            </article>
+
+            <div class="mission-stack">
+              <article class="about-panel mission-card" data-reveal data-delay="200">
+                <p class="mission-label" aria-hidden="true">Our Mission</p>
+                <h3 class="visually-hidden">Our Mission</h3>
+                <p style="font-size: 14px !important;">
+                  To empower businesses of every size with world-class digital
+                  tools, unbreakable security, and intelligent automation, all
+                  delivered with UAE-rooted expertise and a global mindset.
+                </p>
+              </article>
+
+              <article class="about-panel mission-card" data-reveal data-delay="280">
+                <p class="mission-label" aria-hidden="true">Our Vision</p>
+                <h3 class="visually-hidden">Our Vision</h3>
+                <p style="font-size: 14px !important;">
+                  To become the most trusted digital partner across the Middle
+                  East and South Asia by making technology simple, powerful, and
+                  accessible for everyone.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <div class="values-strip">
+            <article class="value-card" data-reveal data-about-value>
+              <div class="value-card__inner">
+                <svg class="value-icon" viewBox="0 0 28 28" aria-hidden="true" focusable="false">
+                  <path d="M14 3.7l3.1 6.3 7 1-5.1 5 1.2 7-6.2-3.3L7.8 23l1.2-7-5.1-5 7-1L14 3.7z" />
+                </svg>
+                <h3>Excellence</h3>
+                <p>Careful execution from first concept to launch.</p>
+              </div>
+            </article>
+
+            <article class="value-card" data-reveal data-delay="80" data-about-value>
+              <div class="value-card__inner">
+                <svg class="value-icon" viewBox="0 0 28 28" aria-hidden="true" focusable="false">
+                  <path d="M14 3.5l8 3.1v6.5c0 5.1-3.2 9.5-8 11.4-4.8-1.9-8-6.3-8-11.4V6.6l8-3.1z" />
+                  <path d="M10.2 14l2.4 2.4 5.2-5.2" />
+                </svg>
+                <h3>Security First</h3>
+                <p>Protection is built in from day one, not added later.</p>
+              </div>
+            </article>
+
+            <article class="value-card" data-reveal data-delay="160" data-about-value>
+              <div class="value-card__inner">
+                <svg class="value-icon" viewBox="0 0 28 28" aria-hidden="true" focusable="false">
+                  <path d="M9.7 15.2l-3.1-3.1a3 3 0 0 1 0-4.2l.3-.3a3 3 0 0 1 4.2 0l1.7 1.7" />
+                  <path d="M18.3 15.2l3.1-3.1a3 3 0 0 0 0-4.2l-.3-.3a3 3 0 0 0-4.2 0l-6.7 6.7a2.4 2.4 0 0 0 3.4 3.4l2.7-2.7" />
+                  <path d="M14.2 17.2l2 2a2.2 2.2 0 0 0 3.1 0l.4-.4" />
+                  <path d="M8.9 14.4l5.1 5.1" />
+                </svg>
+                <h3>Partnership</h3>
+                <p>We work like a long-term partner, not a one-time vendor.</p>
+              </div>
+            </article>
+
+            <article class="value-card" data-reveal data-delay="240" data-about-value>
+              <div class="value-card__inner">
+                <svg class="value-icon" viewBox="0 0 28 28" aria-hidden="true" focusable="false">
+                  <circle cx="14" cy="14" r="10" />
+                  <path d="M9.7 14.2l2.7 2.7 6-6" />
+                </svg>
+                <h3>Reliability</h3>
+                <p>
+                  Support continues after launch with steady improvement and
+                  follow-through.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-section" id="services" aria-labelledby="services-title">
+        <div class="section-shell">
+          <div class="services-heading" data-reveal>
+            <p class="section-eyebrow">Core Services</p>
+            <h2 id="services-title">Everything your business needs to look premium, perform brilliantly, and stay secure.</h2>
+            <p class="section-subtitle">Zehanixx delivers the full digital stack in one place: design, engineering, automation, communication, and cybersecurity.</p>
+          </div>
+
+          <div class="service-grid">
+            <article class="service-card" data-tilt data-reveal>
+              <span class="service-number" aria-hidden="true">01</span>
+              <div class="card-content">
+                <h3>Web Presence</h3>
+                <p class="service-lead">Stunning, fast, responsive websites paired with SEO, maintenance, and WhatsApp-ready communication.</p>
+                <ul class="service-list">
+                  <li>Custom website design and development</li>
+                  <li>Business websites, landing pages, and e-commerce builds</li>
+                  <li>WhatsApp-ready communication and local SEO</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="service-card" data-tilt data-reveal data-delay="100">
+              <span class="service-number" aria-hidden="true">02</span>
+              <div class="card-content">
+                <h3>Product Engineering</h3>
+                <p class="service-lead">Full stack builds for startups and enterprises that need scale, speed, and a clean user experience.</p>
+                <ul class="service-list">
+                  <li>Custom web applications and admin dashboards</li>
+                  <li>API integrations, cloud deployment, and database design</li>
+                  <li>Android, iOS, and cross-platform mobile applications</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="service-card" data-tilt data-reveal data-delay="200">
+              <span class="service-number" aria-hidden="true">03</span>
+              <div class="card-content">
+                <h3>AI &amp; Smart Systems</h3>
+                <p class="service-lead">Intelligent automations that remove repetitive work and make customer journeys feel instant.</p>
+                <ul class="service-list">
+                  <li>Website, WhatsApp, Instagram, and Facebook chatbots</li>
+                  <li>Lead capture, tracking, and appointment booking bots</li>
+                  <li>CRM workflows and document automation</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="service-card" data-tilt data-reveal data-delay="300">
+              <span class="service-number" aria-hidden="true">04</span>
+              <div class="card-content">
+                <h3>Cybersecurity</h3>
+                <p class="service-lead">Professional protection for digital assets with certified testing, clear reporting, and real hardening work.</p>
+                <ul class="service-list">
+                  <li>Website, mobile, network, and database penetration testing</li>
+                  <li>OWASP Top 10 assessment and detailed risk scoring</li>
+                  <li>Hardening, SSL, 2FA, and ongoing monitoring</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="products-section" id="products" aria-labelledby="products-title">
+        <div class="section-shell products-heading" data-reveal>
+          <p class="section-eyebrow">Z Product Suite</p>
+          <h2 id="products-title">Products built for enquiries, follow-up, support, and customer flow.</h2>
+          <p class="section-subtitle">Alongside custom development, Zehanixx offers a focused product stack that helps businesses capture leads faster, manage communication better, and organize service operations in one place.</p>
+        </div>
+
+        <div class="product-visual-showcase" data-reveal>
+            <div class="showcase-container">
+              <img src="assets/zCRM.PNG" alt="Z CRM" class="showcase-item side-item">
+              <img src="assets/zCHAT.PNG" alt="Z Chat" class="showcase-item side-item">
+              
+              <img src="assets/zehanixx_product.PNG" alt="Zehanixx Product" class="showcase-item main-item">
+              
+              <img src="assets/zBOT.PNG" alt="Z Bot" class="showcase-item side-item">
+              <img src="assets/zFORM.PNG" alt="Z Form" class="showcase-item side-item">
+            </div>
+          </div>
+
+        <div class="product-pin" data-product-pin style="--product-count: 7;">
+          <div class="product-stage" data-product-stage>
+            <div class="product-track" data-product-track aria-label="Z product suite">
+              
+              <article class="product-card flip-card" id="crm-card" style="--glow-rgb: 0, 113, 227;">
+                <div class="product-card-inner">
+                  <div class="product-card-front card-face">
+                    <div class="product-card-bg-icon"></div>
+                    <span class="product-badge">01</span>
+                    <h2 class="product-card-title">Z CRM</h2>
+                    <p>Centralize customer data, sales pipelines, and interaction histories within a unified platform, enabling real-time visibility into leads, deals, and follow-ups. Incorporate workflow automation, lead scoring, and task management to streamline sales operations, with role-based access control and audit trails for governance. Provide API-first integrations with communication channels and third-party systems, along with dashboards and analytics for performance monitoring and data-driven decision-making.</p>
+                    <a class="product-link flip-trigger" href="javascript:void(0)">Preview <span aria-hidden="true">&rarr;</span></a>
+                  </div>
+
+                  <div class="product-card-back card-face">
+                    <div class="crm-slideshow">
+                      <div class="crm-slide-1">
+                        <img src="assets/crm1.png" alt="CRM Dashboard 1" class="crm-img-half">
+                        <img src="assets/crm2.png" alt="CRM Sales 2" class="crm-img-half">
+                      </div>
+                      <div class="crm-slide-2">
+                        <img src="assets/crm3.png" alt="CRM Analytics 3" class="crm-img-half">
+                        <img src="assets/crm4.png" alt="CRM Contacts 4" class="crm-img-half">
+                      </div>
+                    </div>
+                    <a class="product-link flip-back" href="javascript:void(0)" style="margin-top: auto; text-align: center; width: 100%;">
+                      <span aria-hidden="true">&larr;</span> Back to info
+                    </a>
+                  </div>
+
+                </div>
+              </article>
+
+              <article class="product-card flip-card" id="lead-card" style="--glow-rgb: 0, 199, 255;">
+                <div class="product-card-inner">
+                  <div class="product-card-front card-face">
+                    <div class="product-card-bg-icon"></div>
+                    <span class="product-badge">02</span>
+                    <h2 class="product-card-title">Lead Management</h2>
+                    <p>Ingest and normalize enquiries from multiple channels (web forms, WhatsApp APIs, landing pages, and campaign integrations), trigger automated lead creation workflows, and apply rule-based or ML-assisted lead assignment. Enable lead qualification through configurable scoring models, validation pipelines, and enrichment services, while maintaining end-to-end lifecycle tracking with status transitions, activity logs, and real-time analytics.</p>
+                    <a class="product-link flip-trigger" href="javascript:void(0)">Preview <span aria-hidden="true">&rarr;</span></a>
+                  </div>
+
+                  <div class="product-card-back card-face">
+                    <div class="back-image-stack">
+                      <img src="assets/lead1.jpeg" alt="Lead Dashboard" class="lead-img">
+                      <img src="assets/lead 2.jpeg" alt="Lead Engine" class="lead-img">
+                    </div>
+                    <a class="product-link flip-back" href="javascript:void(0)" style="margin-top: auto; text-align: center; width: 100%;">
+                      <span aria-hidden="true">&larr;</span> Back to info
+                    </a>
+                  </div>
+
+                </div>
+              </article>
+              
+              <article class="product-card flip-card" id="ticket-card" style="--glow-rgb: 127, 90, 240;">
+                <div class="product-card-inner">
+                  <div class="product-card-front card-face">
+                    <div class="product-card-bg-icon"></div>
+                    <span class="product-badge">03</span>
+                    <h2 class="product-card-title">Ticket Management</h2>
+                    <p>Manage support requests through a structured ticketing system with configurable status workflows, ownership assignment, and SLA-based response handling. Enable automated routing, priority classification, and escalation mechanisms, while maintaining full audit trails, communication logs, and real-time visibility to ensure efficient resolution and improved client service control.</p>
+                    <a class="product-link flip-trigger" href="javascript:void(0)">Learn more <span aria-hidden="true">&rarr;</span></a>
+                  </div>
+
+                  <div class="product-card-back card-face">
+                    <div class="ticket-image-stack">
+                      <img src="assets/ticket1.jpeg" alt="Ticket System 1" class="ticket-img">
+                      <img src="assets/ticket2.jpeg" alt="Ticket System 2" class="ticket-img">
+                    </div>
+                    <a class="product-link flip-back" href="javascript:void(0)" style="margin-top: auto; text-align: center; width: 100%;">
+                      <span aria-hidden="true">&larr;</span> Back to info
+                    </a>
+                  </div>
+
+                </div>
+              </article>
+
+              <article class="product-card flip-card" id="whatsapp-card" style="--glow-rgb: 48, 209, 88;">
+                <div class="product-card-inner">
+                  
+                  <div class="product-card-front card-face">
+                    <div class="product-card-bg-icon"></div>
+                    <span class="product-badge">04</span>
+                    <h2 class="product-card-title">WhatsApp API</h2>
+                    <p>Transform WhatsApp into a real-time enquiry and notification channel using click-to-chat entry points, API-driven messaging, and automated conversation workflows. Orchestrate lead capture, auto-responses, and structured follow-up sequences with templates, triggers, and chatbot logic, while syncing interactions with CRM systems for unified tracking and engagement analytics.</p>
+                    <a class="product-link flip-trigger" href="javascript:void(0)">Learn more <span aria-hidden="true">&rarr;</span></a>
+                  </div>
+
+                  <div class="product-card-back card-face">
+                    <div class="whatsapp-image-stack">
+                      <img src="assets/whatsapp1.png" alt="WhatsApp Automation 1" class="whatsapp-img">
+                      <img src="assets/whatsapp2.png" alt="WhatsApp Automation 2" class="whatsapp-img">
+                    </div>
+                    <a class="product-link flip-back" href="javascript:void(0)" style="margin-top: auto; text-align: center; width: 100%;">
+                      <span aria-hidden="true">&larr;</span> Back to info
+                    </a>
+                  </div>
+
+                </div>
+              </article>
+
+              <article class="product-card" data-product-card style="--glow-rgb: 255, 179, 64;"><div class="product-card-bg-icon"></div><span class="product-badge">05</span><h2 class="product-card-title">Z-Bot</h2><p>A lead-capture bot that asks follow-up questions after a client query, stores the answers, and converts them into qualified leads.</p><a class="product-link" href="#products" aria-label="Learn more about Z-Bot">Preview <span aria-hidden="true">&rarr;</span></a></article>
+              
+              <article class="product-card flip-card" id="phone-card" style="--glow-rgb: 255, 55, 95;">
+                <div class="product-card-inner">
+                  
+                  <div class="product-card-front card-face">
+                    <div class="product-card-bg-icon"></div>
+                    <span class="product-badge">06</span>
+                    <h2 class="product-card-title">Z Phone</h2>
+                    <p>Enable cloud-based telephony with call handling, IVR flows, and intelligent routing to streamline inbound/outbound communication. Capture call metadata, record interactions, and automatically map calls to leads for real-time tracking. Integrate with CRM systems to trigger workflows, log activities, and provide sales and service teams with contextual insights for faster response and resolution.</p>
+                    <a class="product-link flip-trigger" href="javascript:void(0)">Preview <span aria-hidden="true">&rarr;</span></a>
+                  </div>
+
+                  <div class="product-card-back card-face">
+                    <div class="phone-slideshow">
+                      <div class="phone-slide-1">
+                        <img src="assets/phone1.jpeg" alt="Call Interface" class="phone-img-half">
+                        <img src="assets/phone2.jpeg" alt="Call Logs" class="phone-img-half">
+                      </div>
+                      <div class="phone-slide-2">
+                        <img src="assets/phone3.jpeg" alt="Analytics View" class="phone-img-contained">
+                      </div>
+                    </div>
+                    <a class="product-link flip-back" href="javascript:void(0)" style="margin-top: auto; text-align: center; width: 100%;">
+                      <span aria-hidden="true">&larr;</span> Back to info
+                    </a>
+                  </div>
+
+                </div>
+              </article>
+
+              <article class="product-card flip-card" id="form-card" style="--glow-rgb: 64, 224, 208;">
+              <div class="product-card-inner">
+                
+                <div class="product-card-front card-face">
+                  <div class="product-card-bg-icon"></div>
+                  <span class="product-badge">07</span>
+                  <h2 class="product-card-title">Z Form</h2>
+                  <p>Build and deploy schema-driven, dynamic forms to capture structured enquiries, surveys, and service data with validation rules, conditional logic, and multi-step workflows. Seamlessly integrate submissions into backend systems via APIs/webhooks, enabling real-time data ingestion, storage, and synchronization with CRM, analytics, and automation pipelines.</p>
+                  <a class="product-link flip-trigger" href="javascript:void(0)">Preview <span aria-hidden="true">&rarr;</span></a>
+                </div>
+
+                <div class="product-card-back card-face">
+                  <div class="form-slideshow">
+                    <div class="slide-view-1">
+                      <img src="assets/form1.jpeg" alt="Form Step 1" class="form-img-half">
+                      <img src="assets/form2.jpeg" alt="Form Step 2" class="form-img-half">
+                    </div>
+                    <div class="slide-view-2">
+                      <img src="assets/form3.jpeg" alt="Form Final View" class="form-img-contained">
+                    </div>
+                  </div>
+                  <a class="product-link flip-back" href="javascript:void(0)" style="margin-top: auto; text-align: center; width: 100%;">
+                    <span aria-hidden="true">&larr;</span> Back to info
+                  </a>
+                </div>
+
+              </div>
+            </article>
+            </div>
+
+            <div class="product-progress" aria-hidden="true">
+              <div class="progress-rail"><span class="progress-fill" data-progress-fill></span></div>
+              <div class="product-dots" data-product-dots>
+                <button class="product-dot is-active" type="button" data-product-dot aria-label="Show Z CRM"></button>
+                <button class="product-dot" type="button" data-product-dot aria-label="Show Lead Management"></button>
+                <button class="product-dot" type="button" data-product-dot aria-label="Show Ticket Management"></button>
+                <button class="product-dot" type="button" data-product-dot aria-label="Show WhatsApp API"></button>
+                <button class="product-dot" type="button" data-product-dot aria-label="Show Z-Bot"></button>
+                <button class="product-dot" type="button" data-product-dot aria-label="Show Z Phone"></button>
+                <button class="product-dot" type="button" data-product-dot aria-label="Show Z Form"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section process-section" id="process">
+        <div class="container">
+          <div class="section-heading process-heading" data-reveal>
+            <p class="eyebrow">Process</p>
+            <h2>Clear execution from first call to long-term growth.</h2>
+            <p>
+              A simple, transparent workflow with clear milestones and practical communication.
+            </p>
+          </div>
+
+          <div class="process-timeline" data-process-timeline>
+            <aside class="process-rail-panel" aria-label="Process step indicator">
+              <div class="process-rail" aria-hidden="true">
+                <span class="process-rail-line"></span>
+                <span class="process-rail-fill"></span>
+                <span class="process-node process-node-1 is-active" data-step-node="0">
+                  <span class="process-node-fill"></span>
+                  <span class="process-node-label">01</span>
+                </span>
+                <span class="process-node process-node-2" data-step-node="1">
+                  <span class="process-node-fill"></span>
+                  <span class="process-node-label">02</span>
+                </span>
+                <span class="process-node process-node-3" data-step-node="2">
+                  <span class="process-node-fill"></span>
+                  <span class="process-node-label">03</span>
+                </span>
+                <span class="process-node process-node-4" data-step-node="3">
+                  <span class="process-node-fill"></span>
+                  <span class="process-node-label">04</span>
+                </span>
+                <span class="process-node process-node-5" data-step-node="4">
+                  <span class="process-node-fill"></span>
+                  <span class="process-node-label">05</span>
+                </span>
+              </div>
+            </aside>
+
+           <div class="process-step-list">
+              <article class="process-step" data-process-step>
+                <div class="step-bg-icon icon-discovery"></div>
+                <span class="process-mobile-node" aria-hidden="true">01</span>
+                <p class="process-step-kicker">PHASE 01</p>
+                <h3>System Architecture & Discovery</h3>
+                <p>Holistic technical audit of existing infrastructure, stack selection, and comprehensive user journey mapping for optimized logic flow.</p>
+                <small>1&ndash;2 days</small>
+              </article>
+
+              <article class="process-step" data-process-step>
+                <div class="step-bg-icon icon-roadmap"></div>
+                <span class="process-mobile-node" aria-hidden="true">02</span>
+                <p class="process-step-kicker">PHASE 02</p>
+                <h3>Strategic Engineering Roadmap</h3>
+                <p>Definition of API schemas, microservices orchestration, database modeling, and robust end-to-end security protocols.</p>
+                <small>2&ndash;3 days</small>
+              </article>
+
+              <article class="process-step" data-process-step>
+                <div class="step-bg-icon icon-design"></div>
+                <span class="process-mobile-node" aria-hidden="true">03</span>
+                <p class="process-step-kicker">PHASE 03</p>
+                <h3>Intentional UX/UI Prototyping</h3>
+                <p>Production-ready interactive prototyping focused on conversion logic, component-driven design systems, and cross-platform fidelity.</p>
+                <small>3&ndash;7 days</small>
+              </article>
+
+              <article class="process-step" data-process-step>
+                <div class="step-bg-icon icon-build"></div>
+                <span class="process-mobile-node" aria-hidden="true">04</span>
+                <p class="process-step-kicker">PHASE 04</p>
+                <h3>Full-Stack Agile Engineering</h3>
+                <p>Iterative development utilizing automated CI/CD pipelines, containerized environments, and rigorous unit/regression testing.</p>
+                <small>1&ndash;8 weeks</small>
+              </article>
+
+              <article class="process-step" data-process-step>
+                <div class="step-bg-icon icon-launch"></div>
+                <span class="process-mobile-node" aria-hidden="true">05</span>
+                <p class="process-step-kicker">PHASE 05</p>
+                <h3>Scalable Deployment & Growth</h3>
+                <p>Cloud-native orchestration, blue-green deployment strategies, and proactive post-launch performance optimization cycles.</p>
+                <small>Ongoing</small>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="container contact-layout">
+          <div class="contact-copy" data-reveal>
+            <p class="eyebrow">Get In Touch</p>
+            <h2>Ready to grow and secure your business?</h2>
+            <p>
+              Provide the technical essentials of your project below. Once submitted, your brief is processed immediately for our initial review and strategic assessment by our core team.
+            </p>
+
+            <div class="contact-cards">
+              <a class="contact-card" href="https://wa.me/971542739439" target="_blank" rel="noreferrer">
+                <span class="contact-card-main">
+                  <svg class="contact-card-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 19.5 4 21l1.5-4.3A8.2 8.2 0 1 1 8.5 19.5Z" /><path d="M9.1 8.5c.2-.5.5-.6.8-.6h.6c.2 0 .4.1.5.4l.8 1.9c.1.2.1.5-.1.7l-.4.5c-.1.2-.2.4 0 .7.4.7 1.2 1.5 2 1.9.2.2.5.1.6 0l.7-.5c.2-.2.4-.2.7-.1l1.8.8c.3.1.4.3.4.6v.6c0 .3-.1.6-.4.8-.5.4-1.4.6-2.5.2-2.7-.8-5.3-3.3-6.1-6-.3-.9-.1-1.6.1-1.9Z" /></svg>
+                  <span><strong>WhatsApp</strong><span>Instant support via chat</span></span>
+                </span>
+                <svg class="contact-card-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+              </a>
+              <a class="contact-card" href="tel:+971542739439">
+                <span class="contact-card-main">
+                  <svg class="contact-card-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v2.7a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 3.8 2 2 0 0 1 4.1 2h2.8a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8 9.7a16 16 0 0 0 6.3 6.3l1.1-1.1a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 1.7Z" /></svg>
+                  <span><strong>Phone Call</strong><span>Speak directly with the team in the UAE.</span></span>
+                </span>
+                <svg class="contact-card-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+              </a>
+              <a class="contact-card" href="assets/company-profile.pdf" target="_blank" rel="noreferrer">
+                  <span class="contact-card-main">
+                    <svg class="contact-card-icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7Z" />
+                      <path d="M14 2v5h5" />
+                      <path d="M9 13h6" />
+                      <path d="M9 17h4" />
+                    </svg>
+                    <span>
+                      <strong>Brochure &amp; Portfolio</strong>
+                      <span>Download the Zehanixx company profile and overview.</span>
+                    </span>
+                  </span>
+                  <svg class="contact-card-chevron" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m9 18 6-6-6-6" />
+                  </svg>
+                </a>
+            </div>
+          </div>
+
+          <form class="contact-form" id="brief-form" action="https://api.web3forms.com/submit" method="POST" data-reveal data-delay="120">
+
+            <input type="hidden" name="access_key" value="42e1e120-6f84-45e6-a72c-4f070fe89a82">
+            <input type="hidden" name="subject" value="New Project Brief from Zehanixx Web">
+            <input type="hidden" name="from_name" value="Zehanixx Web Bot">
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <div class="form-head">
+              <h3>Start your project</h3>
+              <p>Submit your requirements, and our team will get back to you shortly.</p>
+            </div>
+
+            <div class="form-field">
+              <label for="brief-name">Name</label>
+              <input id="brief-name" type="text" name="name" required />
+            </div>
+            <div class="form-field">
+              <label for="brief-business">Business</label>
+              <input id="brief-business" type="text" name="business" required />
+            </div>
+            <div class="form-field">
+              <label for="brief-service">Service Needed</label>
+              <span class="select-wrap">
+                <select id="brief-service" name="service" required>
+                  <option value="" selected disabled>Select a service</option>
+                  <option>Z CRM</option>
+                  <option>Lead Management</option>
+                  <option>Ticket Management</option>
+                  <option>WhatsApp API</option>
+                  <option>Z-Bot</option>
+                  <option>Z Phone</option>
+                  <option>Z Form</option>
+                  <option>Website Design &amp; Development</option>
+                  <option>Mobile App Development</option>
+                  <option>AI Chatbot &amp; Automation</option>
+                  <option>CRM or ERP System</option>
+                  <option>Cybersecurity / VAPT</option>
+                  <option>SEO &amp; Communication Setup</option>
+                  <option>Full Custom Digital Solution</option>
+                </select>
+                <svg class="select-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </span>
+            </div>
+            <div class="form-field">
+              <label for="brief-details">Project Details</label>
+              <textarea id="brief-details" name="details" rows="5" required></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button class="hero-cta hero-cta--primary submit-pill" type="submit" id="submit-btn">
+                <span class="btn-text">Submit Brief</span>
+                <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </div>
+
+            <p class="form-status" id="form-status" aria-live="polite"></p>
+            <p class="form-note">
+              Your project brief is sent securely to our team. We respect your privacy and will never share your data.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <aside class="chat-dock" aria-label="Quick chat">
+      <span class="chat-dock-label">Chat with us</span>
+      <div class="chat-dock-actions">
+        <a class="chat-dock-primary" href="https://wa.me/971542739439?text=Hello%20Zehanixx%2C%20I%20want%20to%20know%20more%20about%20your%20products." target="_blank" rel="noreferrer">
+          WhatsApp API
+        </a>
+        <a class="chat-dock-secondary" href="#products">
+          View Z-Bot
+        </a>
+      </div>
+    </aside>
+
+    <footer class="site-footer">
+      <div class="container footer-shell">
+        <div>
+          <div class="footer-brand">
+            <img src="assets/favicon.png" alt="Zehanixx Icon" class="footer-favicon">
+            <strong>Zehanixx Solutions</strong>
+          </div>
+          <p>We Build. We Secure. We Grow Your Business.</p>
+        </div>
+        <div>
+          <span>UAE · GCC · India · Worldwide</span>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© 2026 Zehanixx Solutions. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      if (history.scrollRestoration) {
+          history.scrollRestoration = 'manual';
+      }
+
+      window.scrollTo(0, 0);
+
+      if (window.location.hash) {
+          window.history.replaceState("", document.title, window.location.pathname + window.location.search);
+      }
+
+      window.addEventListener('load', () => {
+          window.scrollTo(0, 0);
+      });
+
+      window.addEventListener('DOMContentLoaded', () => {
+          const preloader = document.getElementById('preloader');
+          
+          setTimeout(() => {
+              document.body.classList.add('is-ready');
+              preloader.classList.add('is-hidden');
+              
+              setTimeout(() => {
+                  preloader.remove();
+              }, 600);
+          }, 2200); 
+      });
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const handleFlip = (id) => {
+            const card = document.getElementById(id);
+            if(!card) return;
+            const toBack = card.querySelector('.flip-trigger');
+            const toFront = card.querySelector('.flip-back');
+
+            toBack.addEventListener('click', (e) => {
+                e.preventDefault();
+                card.classList.add('is-flipped');
+            });
+
+            toFront.addEventListener('click', (e) => {
+                e.preventDefault();
+                card.classList.remove('is-flipped');
+            });
+        };
+
+        handleFlip('crm-card'); 
+        handleFlip('lead-card');
+        handleFlip('form-card');
+        handleFlip('phone-card');
+        handleFlip('whatsapp-card');
+        handleFlip('ticket-card');
+    });
+    
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js" defer></script>
+    <script src="app.min.js" defer></script>
+  </body>
+</html>
